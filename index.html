@@ -26,11 +26,11 @@
         // ==========================================
         // EDIT THESE TWO LINES FOR EACH NEW QUIZ
         // ==========================================
-        const SCRIPT_URL = "PASTE_YOUR_GOOGLE_SCRIPT_URL_HERE"; 
-        const QUIZ_TITLE = "Template Quiz Engine Mk 8"; 
+        const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzWbwzfxeeX5sjKjegTJdZClFm-feDNT-JUM7Vkw0m9V2BcWA8aFI8l9IOF729wYyY1/exec"; 
+        const QUIZ_TITLE = "Aritmatika Sosial v1"; 
         
         // INSERT STUDENT NAMES HERE
-        const ALLOWED_STUDENTS = ["13", "Yoshua", "Jevan", "Student"];
+        const ALLOWED_STUDENTS = ["13", "Yoshua", "Jevan", "Student", "Giri", "Astrid", "Christie", "Nonik"];
 
         const shuffle = (array) => {
             const newArr = [...array];
@@ -162,7 +162,7 @@
                                 placeholder="Enter Name"
                             />
                             {accessDenied && <p className="text-red-500 text-[10px] font-bold uppercase mb-4 tracking-widest">Entry Denied</p>}
-                            <button onClick={startQuiz} disabled={studentName.length < 2} className="w-full mt-4 bg-blue-600 text-white font-black py-5 rounded-2xl shadow-lg active:scale-95 disabled:opacity-50 transition-all uppercase tracking-[0.2em] text-xs">Start Interactive Quiz</button>
+                            <button onClick={startQuiz} disabled={studentName.length < 2} className="w-full mt-4 bg-blue-600 text-white font-black py-5 rounded-2xl shadow-lg active:scale-95 disabled:opacity-50 transition-all uppercase tracking-[0.2em] text-xs">Start Quiz</button>
                         </div>
                     </div>
                 );
